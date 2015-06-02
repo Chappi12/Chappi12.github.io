@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>seungchan's HomePage</title>
+        
+        <!-- <link rel="stylesheet" href="style.css"/> -->
+        <style type="text/css">
+        /* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:underline}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+		#wrap{width: 600px; height: 200px; margin-left: auto; margin-right: auto;}
+
+		.form li {float: left; width: 100%; height: 25px;}
+		.form li span{float: left; width: 115px; height: 25px; padding-left: 15px; line-height: 25px; background-color: #ccc;}
+		#see {float: none; border: none; background: none;}
+	</style>
+    </head>
+    
+    <body>
+        <div id="wrap">
+            <form class="form" method="post" action="#">
+                <li>
+                    <span>학교</span>
+                    <input type="text" name="school" />
+                    <input type="button" name="btn_search_school" value="학교찾기" />
+                </li>
+                <li>
+                    <span>담당학년</span>
+                    <select name="grade"></select>학년
+                    <select name="class_number"></select>반
+                </li>
+                <li>
+                    <span>학교전화</span>
+                    <select name="school_head_cell_num"></select>-
+                    <input type="text" name="school_middle_cell_num"/>-
+                    <input type="text" name="school_last_cell_num"/>
+                </li>
+                <li>
+                    <span>휴대전화</span>
+                    <select name="phone_head_num"></select>-
+                    <input type="text" name="phone_middle_num" />-
+                    <input type="text" name="phone_last_num"/>
+                    *어쩌고저쩌고
+                </li>
+                <li>
+                    <span>교사인증</span>
+                    <input type="file" name="teacher"/>
+                    *어쩌고저쩌고
+                    <span id="see"><a href="#">[자세한 방법 보기]</a></span>
+                </li>
+                <li>
+                    <span>간단한 인사 및 소개</span>
+                    <textarea name="user_intro"></textarea>
+                </li>
+                <div id="btn_box">
+                    <input type="submit" value="확인" />
+                    <input type="reset" value="취소"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+Terminal > 
+cd ..
+ls
+cd Document/
+git clone 깃 내 주소
+
+MAC = command space : 한영 전환 / command c,v : 복사,붙여넣기 / control command f : 확대,축소
+Brackets은 좋은 프로그램 (sublime text처럼)
+git sell 해보기 / 연습 / 다운로드
+git add>git commit>git pust순으로 git update
+chrome 개발자 도구 다운로드하자... / chrome 요소 검사!!! 개중요
+
+ui.daum.net >css_convention에서 css reset이 있다-->
